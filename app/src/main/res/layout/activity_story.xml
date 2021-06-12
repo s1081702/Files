@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StoryActivity">
+
+    <Button
+        android:id="@+id/type1btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/design_default_color_background"
+        android:text="type1"
+        app:backgroundTint="#D4EEF1"
+        android:onClick="story1Tapped">
+
+    </Button>
+
+    <Button
+        android:id="@+id/type2btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/design_default_color_background"
+        android:text="type2"
+        app:backgroundTint="#D4EEF1"
+        android:onClick="story2Tapped">
+
+
+    </Button>
+
+
+
+
+</LinearLayout>
+
+
+
+
