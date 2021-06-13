@@ -11,7 +11,7 @@ class StoryActivity : AppCompatActivity() {
     }
 
     fun story1Tapped(view: View) {
-
+           storylist(status:"");
     }
 
     fun story2Tapped(view: View) {}
