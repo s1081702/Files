@@ -5,37 +5,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".StoryActivity">
+    tools:context=".StoryActivity"
+    android:orientation="vertical">
 
-    <Button
-        android:id="@+id/type1btn"
-        android:layout_width="0dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="@color/design_default_color_background"
-        android:text="type1"
-        app:backgroundTint="#D4EEF1"
-        android:onClick="story1Tapped">
+        android:orientation="horizontal">
 
-    </Button>
+        <Button
+            android:id="@+id/type1btn"
+            android:layout_width="207dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:background="@color/design_default_color_background"
+            android:onClick="story1Tapped"
+            android:text="type1"
+            app:backgroundTint="#D4EEF1"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/type2btn"
-        android:layout_width="0dp"
+        </Button>
+
+        <Button
+            android:id="@+id/type2btn"
+            android:layout_width="198dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+
+            android:background="@color/design_default_color_background"
+            android:onClick="story2Tapped"
+            android:text="type2"
+            app:backgroundTint="#D4EEF1"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/type1btn"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+        </Button>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="@color/design_default_color_background"
-        android:text="type2"
-        app:backgroundTint="#D4EEF1"
-        android:onClick="story2Tapped">
+        android:text="TextView" />
 
-
-    </Button>
-
-
+    <ImageView
+        android:id="@+id/imgstory1"
+        android:layout_width="343dp"
+        android:layout_height="243dp"
+        app:srcCompat="@drawable/test3" />
 
 
 </LinearLayout>
+
+
 
 
 
