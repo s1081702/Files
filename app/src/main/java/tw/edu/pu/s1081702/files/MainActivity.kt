@@ -13,7 +13,21 @@ class MainActivity : AppCompatActivity(){
         setContentView(R.layout.activity_main)
 
         TaichungB.setOnClickListener(object :View.OnClickListener{
-            override fun onClick(p0: View) {
+            override fun onClick(p0: View?) {
+                intent = Intent(this@MainActivity, StoryActivity::class.java)
+                startActivity(intent)
+            }
+        })
+
+        PingtungB.setOnClickListener(object :View.OnClickListener{
+            override fun onClick(p0:View?){
+                intent = Intent(this@MainActivity, StoryActivity::class.java)
+                startActivity(intent)
+            }
+        })
+
+        KaohsiungB.setOnClickListener(object :View.OnClickListener{
+            override fun onClick(p0:View?){
                 intent = Intent(this@MainActivity, StoryActivity::class.java)
                 startActivity(intent)
             }
