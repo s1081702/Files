@@ -51,6 +51,13 @@
 
         </Button>
 
+        <Button
+            android:id="@+id/backB"
+            android:layout_width="wrap_content"
+            android:layout_height="94dp"
+            android:layout_weight="1"
+            android:text="BACK" />
+
     </LinearLayout>
 
     <TextView
@@ -64,6 +71,12 @@
         android:layout_width="343dp"
         android:layout_height="243dp"
         app:srcCompat="@drawable/test3" />
+
+    <ImageView
+        android:id="@+id/imgstory2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/test4" />
 
 
 </LinearLayout>
